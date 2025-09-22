@@ -1,0 +1,138 @@
+[gd_scene load_steps=25 format=3 uid="uid://8ft83udmljih"]
+
+[ext_resource type="Texture2D" uid="uid://1jk2mh4qu8sg" path="res://Art/Objects_Sprites/Cross.png" id="1"]
+[ext_resource type="Script" uid="uid://cdhwkoem7ns5y" path="res://Cross.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://cxipfv7h74bus" path="res://Art/Objects_Sprites/Cross_crass_1.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://dkku7g25fftt4" path="res://Art/Objects_Sprites/Cross_crass_2.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://ca2trjc3h8m0i" path="res://Art/Objects_Sprites/Cross_explode_13.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://dia0epdxo08t5" path="res://Art/Objects_Sprites/Cross_explode_11.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://b10hk5kky10d3" path="res://Art/Objects_Sprites/Cross_explode_12.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://d0p3gk6gpajm8" path="res://Art/Objects_Sprites/Cross_explode_1.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://c7l8ogk54j2e6" path="res://Art/Objects_Sprites/Cross_explode_2.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://bqaa0htvdorpw" path="res://Art/Objects_Sprites/Cross_explode_3.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://puwiqno0ur0g" path="res://Art/Objects_Sprites/Cross_explode_10.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://y1yc8onu585t" path="res://Art/Objects_Sprites/Cross_explode_5.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://d17hf001feahv" path="res://Art/Objects_Sprites/Cross_explode_6.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://b47o3xdy8wa7f" path="res://Art/Objects_Sprites/Cross_explode_4.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://b8qx0qss2oata" path="res://Art/Objects_Sprites/Cross_explode_7.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://dwv7deo36pskx" path="res://Art/Objects_Sprites/Cross_explode_8.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://cq8r7h0l8saup" path="res://Art/Objects_Sprites/Cross_explode_9.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://stm0iql3npn5" path="res://Art/Objects_Sprites/Cross_explode_14.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://e1js5tix7mon" path="res://Art/Objects_Sprites/Cross_crass_3.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://bst85pn2dwp42" path="res://Art/Objects_Sprites/Cross_crass_4.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://d4bnee37cyspj" path="res://Art/Objects_Sprites/Cross_crass_5.png" id="21"]
+
+[sub_resource type="SpriteFrames" id="4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21")
+}],
+"loop": false,
+"name": &"default",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18")
+}],
+"loop": true,
+"name": &"explosion",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="3"]
+size = Vector2(18.74896, 18.11494)
+
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(2.04046, 28.3656)
+
+[node name="Cross" type="RigidBody2D"]
+scale = Vector2(1e-05, 1e-05)
+collision_mask = 0
+mass = 0.5
+gravity_scale = 0.98
+script = ExtResource("2")
+MIN_SPEED = 1
+MAX_SPEED = 3
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-0.730377, -1.03674)
+scale = Vector2(0.0957467, 0.0854639)
+sprite_frames = SubResource("4")
+animation = &"explosion"
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-1.549, 12.2321)
+scale = Vector2(2.45347, 0.523078)
+shape = SubResource("3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.549, -0.796776)
+scale = Vector2(5.88105, 2.25484)
+shape = SubResource("2")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(-1.299, -0.796776)
+scale = Vector2(2.375, 3.31644)
+
+[node name="DisposeTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="child_entered_tree" from="CollisionShape2D" to="." method="_on_collision_shape_2d_child_entered_tree"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
+[connection signal="timeout" from="DisposeTimer" to="." method="_on_DisposeTimer_timeout"]

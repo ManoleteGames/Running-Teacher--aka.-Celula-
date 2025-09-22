@@ -1,0 +1,5 @@
+[gd_resource type="FontFile" format=2]
+
+[resource]
+resource_name = "DoT_Font"
+font_path = "res://Fonts/DoT_Custom_v3.ttf"

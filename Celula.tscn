@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Celula.gd" type="Script" id=1]
+[ext_resource path="res://Art/Objects_Sprites/Célula.png" type="Texture2D" id=2]
+[ext_resource path="res://Art/Objects_Sprites/Célula_2.png" type="Texture2D" id=3]
+[ext_resource path="res://Art/Objects_Sprites/Célula_1.png" type="Texture2D" id=4]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 4 ), ExtResource( 3 ) ],
+"loop": false,
+"name": "default",
+"speed": 10.0
+} ]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 11.1284
+
+[node name="Celula" type="RigidBody2D"]
+position = Vector2( 11, 11 )
+scale = Vector2( 0.357602, 0.350725 )
+collision_mask = 0
+script = ExtResource( 1 )
+MIN_SPEED = 100
+MAX_SPEED = 200
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2( -13.982, -14.2562 )
+scale = Vector2( 0.0856757, 0.086018 )
+frames = SubResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -14.846, -14 )
+scale = Vector2( 1.84704, 1.70802 )
+shape = SubResource( 1 )
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2( -13.982, -14.2562 )
+scale = Vector2( 1.64807, 1.90867 )
+
+[node name="DisposeTimer" type="Timer" parent="."]
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
+[connection signal="timeout" from="DisposeTimer" to="." method="_on_DisposeTimer_timeout"]

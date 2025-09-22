@@ -1,0 +1,383 @@
+[gd_scene load_steps=72 format=3 uid="uid://dy85k7b6ctw3i"]
+
+[ext_resource type="Script" uid="uid://q2w7pwiyl4yb" path="res://Player.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://ngm8nmxn6wkp" path="res://Art/Char_Sprites_v2/images/teacher_tile_03.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://cs84eg0a0vwvn" path="res://Art/Char_Sprites_v2/images/teacher_tile_06.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://rodtu7f17xk3" path="res://Art/Char_Sprites_v2/images/teacher_tile_07.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://bkyh8rb5oqrpr" path="res://Art/Char_Sprites_v2/images/teacher_tile_01.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://c7cgnlv3r2en6" path="res://Art/Char_Sprites_v2/images/teacher_tile_02.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://d366ywf5c8pq" path="res://Art/Char_Sprites_v2/images/teacher_tile_04.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://yurllg4w60fq" path="res://Art/Char_Sprites_v2/images/teacher_tile_05.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://c1agx6au4yii1" path="res://Art/Char_Sprites_v2/images/teacher_tile_11.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://b6p1rci74d6na" path="res://Art/Char_Sprites_v2/images/teacher_tile_12.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://w5yxumvvof7c" path="res://Art/Char_Sprites_v2/images/teacher_tile_16.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://cs8rfc3j4l58y" path="res://Art/Char_Sprites_v2/images/teacher_tile_21.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://bvitgjj73p00i" path="res://Art/Char_Sprites_v2/images/teacher_tile_14.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://56hnpms0espf" path="res://Art/Char_Sprites_v2/images/teacher_tile_18.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://dqt3bxqs10ji7" path="res://Art/Char_Sprites_v2/images/teacher_tile_19.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://bmg761q4n6ghn" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_29.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://sghsbstcwq7k" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_33.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://bymreeq6ys3rp" path="res://Art/Char_Sprites_v2/images/teacher_tile_22.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://unenl4wrjfk2" path="res://Art/Char_Sprites_v2/images/teacher_tile_15.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://b7fkk0yxwtues" path="res://Art/Char_Sprites_v2/images/teacher_tile_17.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://ddruq1v4xbj08" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_34.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://dxjfd8wyiv4pc" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_35.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://jown3qn4j206" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_36.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://vmtbldq8n2o6" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_37.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://bs801i54caddi" path="res://Art/Char_Sprites_v2/images/teacher_tile_10.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://bnmkmo763g4ta" path="res://Art/Char_Sprites_v2/images/teacher_tile_20.png" id="26"]
+[ext_resource type="Texture2D" uid="uid://bogfbyxg6f2ee" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_39.png" id="27"]
+[ext_resource type="Texture2D" uid="uid://cfmt5wp3kk4m2" path="res://Art/Char_Sprites_v2/images/teacher_tile_13.png" id="28"]
+[ext_resource type="Texture2D" uid="uid://bhhy7hsc2npou" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_42.png" id="29"]
+[ext_resource type="Texture2D" uid="uid://ddi4dejmyogfn" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_41.png" id="30"]
+[ext_resource type="Texture2D" uid="uid://blhcppfujx74u" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_43.png" id="31"]
+[ext_resource type="Texture2D" uid="uid://cvr3tywdkxx52" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_44.png" id="32"]
+[ext_resource type="Texture2D" uid="uid://c5ytboomwk3yt" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_45.png" id="33"]
+[ext_resource type="Texture2D" uid="uid://c770mna8n64t7" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_46.png" id="34"]
+[ext_resource type="Texture2D" uid="uid://qvmlg5c0q1mr" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_32.png" id="35"]
+[ext_resource type="Texture2D" uid="uid://ufvdxmdka12t" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_47.png" id="36"]
+[ext_resource type="Texture2D" uid="uid://ctwl8scd6dinm" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_48.png" id="37"]
+[ext_resource type="Texture2D" uid="uid://d2xklv5iiq68b" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_31.png" id="38"]
+[ext_resource type="Texture2D" uid="uid://bndj1hs8vttca" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_40.png" id="39"]
+[ext_resource type="Texture2D" uid="uid://ds83m6dtpvwuc" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_49.png" id="40"]
+[ext_resource type="Texture2D" uid="uid://b4gs3y8gsslgx" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_50.png" id="41"]
+[ext_resource type="Texture2D" uid="uid://b43b2cvr657n6" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_51.png" id="42"]
+[ext_resource type="Texture2D" uid="uid://pq6wuhjk6ygw" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_38.png" id="43"]
+[ext_resource type="Texture2D" uid="uid://chrgljp8pv4kl" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_52.png" id="44"]
+[ext_resource type="Texture2D" uid="uid://dhhv8h68swog8" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_30.png" id="45"]
+[ext_resource type="Texture2D" uid="uid://dbrje7pfy00ow" path="res://Art/Char_Sprites_v2/images/teacher_tile_09.png" id="46"]
+[ext_resource type="Texture2D" uid="uid://gytiq23pwdqy" path="res://Art/Char_Sprites_v2/images/teacher_tile_08.png" id="47"]
+[ext_resource type="Texture2D" uid="uid://bul0ss0ebuob7" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_74.png" id="48"]
+[ext_resource type="Texture2D" uid="uid://bfulbo2cl1jjd" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_70.png" id="50"]
+[ext_resource type="Texture2D" uid="uid://d10t15axcqi6y" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_72.png" id="51"]
+[ext_resource type="Texture2D" uid="uid://bde10xu1ga8p4" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_75.png" id="52"]
+[ext_resource type="Texture2D" uid="uid://da6wn0t4q1d8p" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_73.png" id="53"]
+[ext_resource type="Texture2D" uid="uid://dp0230g51yshf" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_61.png" id="54"]
+[ext_resource type="Texture2D" uid="uid://cooonp1ijap0k" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_62.png" id="55"]
+[ext_resource type="Texture2D" uid="uid://cqmvh88hcq1vc" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_64.png" id="56"]
+[ext_resource type="Texture2D" uid="uid://sbfe2p8tjcwp" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_68.png" id="57"]
+[ext_resource type="Texture2D" uid="uid://my1pl86sjmnl" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_54.png" id="58"]
+[ext_resource type="Texture2D" uid="uid://dy0h0m3o1ycii" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_67.png" id="59"]
+[ext_resource type="Texture2D" uid="uid://7f1w30vmnnaw" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_60.png" id="60"]
+[ext_resource type="Texture2D" uid="uid://dmxb2h1kl4o0r" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_63.png" id="61"]
+[ext_resource type="Texture2D" uid="uid://cx0h0dppxxijh" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_69.png" id="62"]
+[ext_resource type="Texture2D" uid="uid://buoaxj8xbltyd" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_55.png" id="63"]
+[ext_resource type="Texture2D" uid="uid://c72w4pjm3kcm6" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_65.png" id="64"]
+[ext_resource type="Texture2D" uid="uid://bq12omr5642de" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_53.png" id="65"]
+[ext_resource type="Texture2D" uid="uid://7b52j5mu78p" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_56.png" id="66"]
+[ext_resource type="Texture2D" uid="uid://b8xe5qgv6mivb" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_57.png" id="67"]
+[ext_resource type="Texture2D" uid="uid://5amwndebef2" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_59.png" id="68"]
+[ext_resource type="Texture2D" uid="uid://dbrrcn8hdjgwq" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_66.png" id="69"]
+[ext_resource type="Texture2D" uid="uid://dsblsk3rp4mbo" path="res://Art/Char_Sprites/all/images/teacher_tile_v3_58.png" id="70"]
+
+[sub_resource type="SpriteFrames" id="1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18")
+}],
+"loop": false,
+"name": &"dead",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13")
+}],
+"loop": true,
+"name": &"level1",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29")
+}],
+"loop": true,
+"name": &"level2",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66")
+}],
+"loop": true,
+"name": &"level3",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("67")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50")
+}],
+"loop": true,
+"name": &"level4",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("51")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51")
+}],
+"loop": false,
+"name": &"superhero",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="2"]
+radius = 7.9504
+height = 15.9008
+
+[node name="Player" type="Area2D"]
+position = Vector2(232.48, 522.925)
+scale = Vector2(1.58198, 2.0736)
+script = ExtResource("1")
+SPEED = 400
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(2.22507, 6.78772)
+scale = Vector2(0.286865, 0.238707)
+sprite_frames = SubResource("1")
+animation = &"dead"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.328709, -0.446091)
+scale = Vector2(1.65404, 1.62546)
+shape = SubResource("2")
+disabled = true
+
+[connection signal="body_entered" from="." to="." method="_on_Player_body_entered"]
